@@ -1,0 +1,39 @@
+.anchor
+.DS_Store
+target
+**/*.rs.bk
+node_modules
+test-ledger
+.yarn
+
+# Ignore node_modules and build artifacts
+node_modules/
+dist/
+
+# Ignore Solana and Anchor build artifacts
+target/
+**/*.so
+**/*.d
+**/*.ll
+**/*.rmeta
+**/*.rlib
+invoked.timestamp
+
+# Ignore logs and output files
+stderr
+output
+root-output
+
+# Ignore incremental compilation artifacts
+incremental/
+
+# IDE and system-specific ignores
+.vscode/
+.idea/
+*.log
+
+# Sensitive information
+.env
+*.pem
+*.key
+
